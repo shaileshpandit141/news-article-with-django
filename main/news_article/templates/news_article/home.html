@@ -14,7 +14,7 @@
     <section class="section__container">
         {% for news in response %}
         <article>
-            <a href="{{ news.url }}" class="news__cont">
+            <a href="{{ news.url }}" class="news__cont" target="-main">
                 <figure class="news__cont__figure">
                     <img src="
                         {% if news.urlToImage == null %}
