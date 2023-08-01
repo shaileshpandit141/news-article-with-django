@@ -1,0 +1,31 @@
+<section class="footer_section__cont">
+
+    <ul>
+        <li>
+            <a style="{% if request.path == "/" %}color:aliceblue;{% endif %}" href="{% url 'home-page' %}">All News</a>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <a href="{% url 'india_news' %}" style="{% if request.path == "/country/india" %}color:aliceblue;{% endif %}">India News</a>
+        </li>
+        <li>
+            <a href="">?</a>
+        </li>
+        <li>
+            <a href="">?</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="{% url 'us_news' %}" style="{% if request.path == "/country/usa" %}color:aliceblue;{% endif %}">Usa News</a>
+        </li>
+        <li>
+            <a href="">?</a>
+        </li>
+        <li>
+            <a href="">?</a>
+        </li>
+    </ul>
+</section>

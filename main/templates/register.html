@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}Register{% endblock page_title %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+{% endblock style %}
+
+
+{% block content %}
+    <section class="section__container">
+
+        <form action="" class='main_cont'>
+            <h1>Register</h1>
+            <div>
+                <label for="name">First Name</label>
+                <input type="name">
+            </div>
+            <div>
+                <label for="name">Last Name</label>
+                <input type="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+    
+    </section>
+{% endblock content %}

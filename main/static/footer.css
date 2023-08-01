@@ -1,0 +1,31 @@
+.footer_section__cont {
+    margin-top: 2rem;
+    background-color: #303030;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer_section__cont ul {
+    list-style-type: none;
+    padding: 2rem 0;
+    margin: 1rem;
+}
+
+.footer_section__cont ul li {
+    font-size: 18px;
+    margin: .5rem;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.footer_section__cont ul li a {
+    color: rgb(25, 129, 129);
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.footer_section__cont ul li a:hover {
+    opacity: .8;
+}

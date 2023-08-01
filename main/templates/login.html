@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_title %}Login{% endblock page_title %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+{% endblock style %}
+
+
+{% block content %}
+    <section class="section__container">
+
+        <form action="" class='main_cont'>
+            <h1>Login</h1>
+            <div>
+                <label for="email">Email</label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="" id="">
+            </div>
+            <button type="submit">Login</button>   
+        </form>
+    
+    </section>
+{% endblock content %}

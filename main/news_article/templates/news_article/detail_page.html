@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ detail_data.title | title }}{% endblock title %}
+
+{% block style %}
+<link rel="stylesheet" href="news_article/css/detail_page.css">
+{% endblock style %}
+
+{% block content %}
+<section>
+    <title>
+        <h1>{{ detail_data.title | title }}</h1>
+    </title>
+    <img src="{{ detail_data.urlToImage }}" alt="{{detail_data.urlToImage}}" width="100px">
+    <h3>published: {{ detail_data.publishedAt }}</h3>
+    {{ detail_data.content }}
+</section>
+{% endblock content %}

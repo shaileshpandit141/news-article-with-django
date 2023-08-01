@@ -1,0 +1,25 @@
+.filter__secton_cont {
+    width: 80%;
+}
+.filter__cont {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.filter__cont a {
+    color: rgb(25, 129, 129);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.filter__cont a:hover,
+.filter__cont a:focus {
+    color: aliceblue;
+}

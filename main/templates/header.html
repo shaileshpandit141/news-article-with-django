@@ -1,0 +1,13 @@
+<nav>
+    <main class="header__cont">
+        <div class='logo'>
+            <a style="{% if request.path == "/" %}color:aliceblue;{% endif %}" href="{% url 'home-page' %}">News</a>
+        </div>
+        <div class='register'>
+            <a href="{% url 'register' %}">Register</a>
+        </div>
+        <div class='login'>
+            <a href="{% url 'login' %}">Login</a>
+        </div>
+    </main>
+</nav>

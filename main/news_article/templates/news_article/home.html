@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}News{% endblock title %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'news_article/css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'news_article/include/news_filter.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+{% endblock style %}
+
+{% block content %}
+    {% include "news_article/include/news_filter.html" %}
+    <section class="section__container">
+        {% for news in response %}
+        <article>
+            <a href="{{ news.url }}" class="news__cont">
+                <figure class="news__cont__figure">
+                    <img src="
+                        {% if news.urlToImage == null %}
+                        {% static 'news_article/images/img_not_found.jpg' %} 
+                        {% else %} 
+                        {{ news.urlToImage }} 
+                        {% endif %}" 
+                        alt="" width="400px" height="auto">
+                    <div class="date_time__cont">
+                        <span class="material-symbols-outlined">schedule</span>
+                        <p class="date__time">{{ news.publishedAt }}</p>
+                    </div>
+                </figure>
+                <div class="news__info">
+                    <h3 class="news__info__title">{{ news.title | slice:50 }}...</h3>
+                <p class="news__info__discription">{{ news.description | slice:100}}...</p>  
+                </div>  
+            </a>
+        </article>
+        {% endfor %}
+    </section>
+
+{% endblock content %}

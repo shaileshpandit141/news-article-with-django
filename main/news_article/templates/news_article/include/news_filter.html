@@ -1,0 +1,9 @@
+<section class="filter__secton_cont">
+    <main class="filter__cont">
+        <a href="{% url 'india_news' %}" style="{% if request.path == "/country/india" %}color:aliceblue;{% endif %}">India</a>
+        <a href="{% url 'us_news' %}" style="{% if request.path == "/country/usa" %}color:aliceblue;{% endif %}">Usa</a>
+        <a href="">?</a>
+        <a href="">?</a>
+        <a href="">?</a>
+    </main>
+</section>
